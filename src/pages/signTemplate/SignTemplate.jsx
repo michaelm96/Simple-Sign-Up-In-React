@@ -187,15 +187,15 @@ function SignTemplate(props) {
         </div>
         <div className="SSO">
           <GoogleLogin
-            clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+            clientId="230952612308-f7v33f5v970ohdd9crjfm4jrn0pqgn62.apps.googleusercontent.com"
             buttonText="Login with Google"
             onSuccess={callback}
             onFailure={callback}
             style={{ backgroundColor: "red" }}
             size="small"
-            />
+          />
           <FacebookLogin
-            appId={process.env.REACT_APP_FACEBOOK_APP_ID}
+            appId="2625207070943534"
             autoLoad={false}
             fields="name,email,picture"
             // onClick={}
