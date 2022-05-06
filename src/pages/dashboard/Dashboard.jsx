@@ -25,6 +25,8 @@ function Dashboard() {
 
   const init = async () => {
     try {
+      console.log(baseURL, "@28");
+      console.log(cookies.user.accessToken, "@29");
       const users = await axios.get(`${baseURL}/users`, {
         headers: {
           access_token: cookies.user.accessToken,
