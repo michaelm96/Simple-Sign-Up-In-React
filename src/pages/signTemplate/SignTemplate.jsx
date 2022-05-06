@@ -214,7 +214,7 @@ function SignTemplate(props) {
           }}
           style={{ color: "white" }}
         >
-          Wanna sign up? Register here
+          Wanna sign up? Sign Up here
         </Link>
       ) : (
         <Link
@@ -223,7 +223,7 @@ function SignTemplate(props) {
           }}
           style={{ color: "white" }}
         >
-          Have an account? Sign in here
+          Have an account? Sign In here
         </Link>
       )}
       <SnackbarComp open={open} message={message} status={status} />
