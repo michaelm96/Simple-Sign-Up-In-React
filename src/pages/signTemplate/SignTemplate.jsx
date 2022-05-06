@@ -31,7 +31,7 @@ function SignTemplate(props) {
   const callback = async (res) => {
     try {
       let result;
-      console.log(result, "@34");
+      console.log(res, "@34");
       if (res.googleId) {
         result = await axios.post(`${baseURL}/googleLogin`, {
           idToken: res.tokenId,
