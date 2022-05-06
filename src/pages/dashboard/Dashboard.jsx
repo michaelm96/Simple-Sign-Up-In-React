@@ -29,12 +29,12 @@ function Dashboard() {
       console.log(cookies.user.accessToken, "@29");
       const users = await axios.get(`${baseURL}/users`, {
         headers: {
-          access_token: cookies.user.accessToken,
+          authentication: cookies.user.accessToken,
         },
       });
       const statistic = await axios.get(`${baseURL}/activeSessions/7`, {
         headers: {
-          access_token: cookies.user.accessToken,
+          authentication: cookies.user.accessToken,
         },
       });
       const sorted = users.data.response.sort((a, b) => {
